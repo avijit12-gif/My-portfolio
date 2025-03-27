@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avijit Kushwaha</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>
+                Hi, I'm Avijit Kushwaha
+                <a href="https://drive.google.com/file/d/1C6aq96cQ_EciDQi3FsBBpn_usDGr5jze/view?usp=sharing" 
+                   download class="download-btn">Download Resume</a>
+            </h1>
+            <p>A learning software developer.</p>
+            <p class="about-line">Passionate about building innovative solutions and exploring new technologies to solve real-world problems.</p>
+        </div>
+        <div class="right-section">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQF-XM594TKg2g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725622387272?e=1744243200&v=beta&t=yWQV7JS2SjQixmZi9WCU46FI1ApXcXXwSiPsXK31dE4" alt="Profile Photo">
+        </div>
+    </div>
+
+    <div class="tab-container">
+        <div class="tab" onclick="openTab('home')">Home</div>
+        <div class="tab" onclick="openTab('about')">About Me</div>
+        <div class="tab" onclick="openTab('skills')">Skills</div>
+        <div class="tab" onclick="openTab('courses')">Courses</div>
+        <div class="tab" onclick="openTab('links')">Links</div>
+        <div class="tab" onclick="openTab('contact')">Contact Me</div>
+    </div>
+
+    <div id="home" class="tab-content active-tab">
+        <h2>Home</h2>
+        <p>Welcome to my personal website! Explore my skills, courses, and more.</p>
+    </div>
+    <div id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm Avijit Kushwaha, a passionate learner and developer eager to explore new technologies.</p>
+    </div>
+    <div id="skills" class="tab-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mysql & C</li>
+            <li>Python & Data Science</li>
+            <li>Problem Solving</li>
+        </ul>
+    </div>
+    <div id="courses" class="tab-content">
+        <h2>Courses</h2>
+        <ul>
+            <li>Full Stack Web Development</li>
+            <li>Machine Learning with Python</li>
+            <li>Data Structures & Algorithms</li>
+        </ul>
+    </div>
+    <div id="links" class="tab-content">
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/avijit-kushwaha-7b03a1283" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/avijit12-gif" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
